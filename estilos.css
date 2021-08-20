@@ -1,0 +1,36 @@
+#header {
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    background-color:#bd2b74ab
+}
+#header-nav{
+    text-decoration:none;
+    color:inherit;
+    font-size:20px;
+background-color: #bd2b748f;
+    height: 10%;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    }
+    h1.mercytop{
+        text-align: center;
+        color: white;
+        font-size: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    .boton{
+        border: 5px solid #ffffff; /*anchura, estilo y color borde*/
+        padding: 10px; /*espacio alrededor texto*/
+        background-color: #bd2b748f; /*color botón*/
+        color: #ffffff; /*color texto*/
+        text-decoration: none; /*decoración texto*/
+        font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+        border-radius: 40px; /*bordes redondos*/
+    }
+    img{
+        height: 200px;
+      
+    }
