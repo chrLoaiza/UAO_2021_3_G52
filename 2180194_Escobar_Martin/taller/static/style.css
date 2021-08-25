@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'RadioGrotesk';
+    src: url('../assets/font/RadioGrotesk-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('../assets/font/Hero.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: RadioGrotesk;
+    font-weight: normal;
+    color: #464646;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    height: 4px;
+    background: linear-gradient(180deg, #8C35FB 0%, #1400FF 100%);
+    border-radius: 100vw;
+}
+
+main{
+    width: 100%;
+    padding-top: 22vh;
+    display: inline-block;
+}
+
+header {
+    background: linear-gradient(90deg, #8C35FB -84.14%, #1400FF 207.76%, #4200FF 207.79%);
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding-top: 1vh;
+}
+
+nav {
+    margin-top: auto;
+    margin-bottom: 1vh;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li > a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    transition: all .2s;
+    color: rgb(221, 221, 221);
+}
+
+main > * {
+    padding: 2vw;
+}
+
+.main img {
+    width: 22vw;
+}
+
+.main > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 2vw;
+}
+
+.main h4 {
+    text-align: center;
+    width: 100%;
+    font-family: Hero;
+    font-size: 1.8vw;
+}
+
+.main{
+    float: left;
+    box-sizing: border-box;
+    width: 70%;
+    text-align: justify;
+}
+
+aside {
+    float: right;
+    box-sizing: border-box;
+    width: 30%;
+    text-align: justify;
+}
+
+.about {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutCard{
+    text-align: center;
+    height: 400px;
+    width: 325px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3vw;
+}
+
+.aboutCard > h1{
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+.gradientText{
+    background: -webkit-linear-gradient(90deg, #8C35FB -84.14%, #1400FF 207.76%, #4200FF 207.79%);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutCard > p{
+    margin: 40px;
+    text-align: justify;
+}
+
+.sectionCard{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.sectionCard > img {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sectionCard > div {
+    position: absolute;
+    width: 85%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3vw;
+}
+
+.content {
+    padding: 10% 13%;
+    padding-right: 5%;
+}
+
+.services {
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services > div {
+    margin-bottom: 20px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.services h1{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+
+@media (max-width: 780px) {
+
+    main > * {
+        width: 100%;
+        padding: 1.2vw;
+        padding: 7%;
+        padding-bottom: 5%;       
+    }
+
+    .main {
+        width: 100%;
+        float: unset;
+    }
+
+    aside {
+        float: unset;
+        padding-top: 5%;
+    }
+
+    .main h4{
+        font-size: 2.2vw;
+    }
+
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .debajo{
+        margin-top: 30px;
+    }
+
+    .services > div {
+        margin-bottom: 20px ;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 330px){
+
+    .aboutCard{
+        width: 290px;
+    }
+}
+
+@media (max-width: 500px){
+    .sectionCard{
+        width: 270px;
+        margin-top: 20px;
+    }
+
+    .content{
+        padding-left: 25%;
+    }
+    
+    .services {
+        padding: 50px;
+    }
+
+    .services > div{
+        padding-top: 20px;
+    }
+
+    .services h1{
+        font-size: 24px;
+    }
+}
