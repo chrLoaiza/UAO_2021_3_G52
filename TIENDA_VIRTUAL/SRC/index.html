@@ -6,34 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adizero.com </title>
+    <link rel="stylesheet" href="resources/css/style.css">
+
 </head>
+<script>
+
+    function upVol() {
+        var vid = document.getElementById('vid');
+        vid.volume = 1;
+        // alert('hi');
+    }
+    window.onload = function () {
+        // alert('hi');
+        //  document.getElementById('vid').volume=0.4;
+        setTimeout(upVol, 3000);
+    };
+
+</script>
 
 <body>
     <header>
-        <h1><strong>HEADER </strong></h1>
-        <h1><strong>WhatsApp y Redes Sociales </strong></h1>
+        <div id="oficialPage">
+            <a href="https://www.adidas.co/" class="linkWeb">TIENDA OFICIAL COLOMBIA</a></br>
+            <a href="index.html" class="linkWp"> <img class="linkWp" src="resources/img/whatsappIcon.png" /> LINEA
+                WHATSAPP COLOMBIA : +57 3234708490</a>
+        </div>
+        <!-- <h1><strong>HEADER </strong></h1> -->
+        <!-- <h1><strong>LOGO | WhatsApp y Redes Sociales </strong></h1> -->
     </header>
-    <nav>
-        <h1><strong>NAV </strong></h1>
-        <h1><strong>MENU- BARRA DE BUSQUEDA -INICIO DE SESIÓN </strong></h1>
+    <nav class="navbarx">
+
+        <a href="index.html" class="linkLogo"> <img id="logo" src="resources/img/adidasLogo.jpg" /></a>
+        <div class="btn-group">
+
+            <button class=" buttonM buttonM1">Hombre</button>
+            <button class="buttonM buttonM2">Mujer</button>
+            <button class="buttonM buttonM3">Niños</button>
+        </div>
+
     </nav>
     <main>
-        <h1><strong>MAIN NO-PADDING-TOP </strong></h1>
-        <h1><strong>MAIN SCROLLABLE Y </strong></h1>
-        <article>
-            <h1><strong>ARTICLE LEFT </strong></h1>
+        <!-- <h1><strong>MAIN NO-PADDING-TOP </strong></h1>
+            <h1><strong>MAIN SCROLLABLE Y </strong></h1> -->
+        <article class="articleIz">
 
-            <h4>mensaje bienvenida,Mas información y videoclip </h4>
+            <menu class="menuLateralIzq">
+                <li class="calzado">TENIS</li>
+                <li class="ropa">ROPA</li>
+                <li class="accesorios">ACCESORIOS</li>
+                <li class="deportes">DEPORTES</li>
+            </menu>
+
+            <!-- <h1><strong>ARTICLE LEFT </strong></h1>
+
+                <h4>mensaje bienvenida,Mas información y videoclip </h4> -->
         </article>
-        <article>
-            <h1><strong>ARTICLE RIGHT </strong></h1>
+        <article class="articleDer">
+            <!-- <h1><strong>ARTICLE RIGHT </strong></h1>
 
-            <h4> videoclip presentacion productos</h4>
+                <h4> videoclip presentacion productos</h4> -->
+            <video id="vid" muted src="resources/img/comercial.mp4" width="100%" autoplay controls>
+                <!-- <source src="resources/img/comercial.mp4" type="video/mp4"> -->
+
+            </video>
         </article>
     </main>
     <footer>
-        <h1><strong>FOOTER </strong></h1>
-        <h1><strong>DATOS DE CONTACTO, SECCIONES Y COPYRIGHT </strong></h1>
+        <div class="col">
+            <h1>DATOS DE CONTACTO</h1>
+            <h4>Telefono: +57 3184230490</h4>
+            <h4>Línea gratuita: 01 8000 91 74 75</h4>
+        </div>
+        <div class="col">
+            <h1>WHATSAPP <img src="resources/img/whatsappIcon.png" style="width: 25px;height: 25px;margin-top: -12px;">
+            </h1>
+            <h4>Linea Nacional: +57 3234708490</h4>
+
+
+        </div>
+
+        <div class="col">
+            <h1>CORREO ELECTRÓNICO</h1>
+            <h4>adizerostore@adidas.co</h4>
+
+        </div>
     </footer>
 
 </body>
