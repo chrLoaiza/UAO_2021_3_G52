@@ -65,3 +65,25 @@
     right: 30%;
     bottom: 38%;
 }
+
+.sidebar{
+    border: 1px solid rgb(255, 0, 0);
+    display: flex;
+    position: absolute;
+    right: 0%;
+    padding-left:0px;
+    padding-right:0px;
+    height: 80%;
+    width: 15%;  
+}
+
+.sidebar >ul{
+    list-style-type: none;
+    font: 25px Arial, sans-serif;       
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
