@@ -22,6 +22,16 @@ $(document).ready(() => {
 
     }
 
+    var controller = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({
+        duration: 100,
+        offset: 50
+    })
+        .setPin("#my-sticky-element")
+        .addTo(controller);
+
+
 });
 
 function handleMove(e, el) {
@@ -41,19 +51,25 @@ function handleMove(e, el) {
 
 }
 
-function home() {
-    console.log(window.scrollY);
-    window.scrollTo(0, 0);
-}
+function copyToClipboard() {
+    let text = '+573185824979'
+    var dummy = document.createElement("textarea");
 
-function about() {
-    window.scrollTo(0, 480);
-}
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
 
-function services() {
-    window.scrollTo(0, 1000);
-}
-
-function contact() {
-    window.scrollTo(0, 480);
+    $.toast({
+        heading: 'Coppied!!',
+        text: 'Phone Coppied to clipboard',
+        hideAfter: 5000,
+        loader: false,
+        position: 'bottom-left',
+        icon: 'info',
+        showHideTransition: 'fade',
+        autoHide: true,
+        allowToastClose: true
+    });
 }
