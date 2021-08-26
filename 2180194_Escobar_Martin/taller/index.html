@@ -8,6 +8,7 @@
     <title>Dev Life</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./static/style.css">
+    <script src="https://code.jquery.com/git/jquery-git.js"></script>
 </head>
 
 <body>
@@ -15,10 +16,10 @@
         <h1>DevLife</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="javascript:void(0);" onclick="home()">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="about()">About</a></li>
+                <li><a href="javascript:void(0);" onclick="services()">Services</a></li>
+                <li><a href="javascript:void(0);" onclick="contact()">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -59,14 +60,14 @@
     <hr />
     <section class="about">
 
-        <div class="aboutCard">
+        <div class="aboutCard tilt">
             <h1 class="gradientText">Mision</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                 lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
                 vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque
                 fermentum dui faucibus.</p>
         </div>
-        <div class="aboutCard debajo">
+        <div class="aboutCard debajo tilt">
             <h1 class="gradientText">Vision</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                 lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
@@ -85,7 +86,7 @@
                         <h1 class="gradientText">Digital Marketing</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
                             venenatis.
-                            <a href="#" class="gradientText">View more...</a>
+                            <a href="javascript:void(0);" class="gradientText">View more...</a>
                         </p>
                     </div>
                 </div>
@@ -97,7 +98,7 @@
                         <h1 class="gradientText">Webs</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
                             venenatis.
-                            <a href="#" class="gradientText">View more...</a>
+                            <a href="javascript:void(0);" class="gradientText">View more...</a>
                         </p>
                     </div>
                 </div>
@@ -111,7 +112,7 @@
                         <h1 class="gradientText">Server administration</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
                             venenatis.
-                            <a href="#" class="gradientText">View more...</a>
+                            <a href="javascript:void(0);" class="gradientText">View more...</a>
                         </p>
                     </div>
                 </div>
@@ -123,7 +124,7 @@
                         <h1 class="gradientText">Apps</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
                             venenatis.
-                            <a href="#" class="gradientText">View more...</a>
+                            <a href="javascript:void(0);" class="gradientText">View more...</a>
                         </p>
                     </div>
                 </div>
@@ -132,9 +133,13 @@
     </section>
     <hr />
     <section>
-        <h1>Contact</h1>
+        <div>
+
+        </div>
     </section>
     <hr />
+
+    <script src="./static/work.js"></script>
 </body>
 
 </html>
