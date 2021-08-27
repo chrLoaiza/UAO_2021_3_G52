@@ -10,7 +10,7 @@ body {
   max-width: 728px;
   width: 728px;
 }
-
+a:hover
 /* Header Tag Styles */
 header {
   display: flex;
@@ -88,4 +88,40 @@ main {
 .big-container a {
   width: 600px;
   height: 500px;
+}
+
+.header-elemnts{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 10px;
+  background: aquamarine;
+  justify-content: space-evenly;
+}
+
+@media (orientation: landscape){
+  .header-elemnts {
+    background-color: blue;
+  }
+}
+
+/* screen-viewport-app with <=650*/
+@media (max-width : 650px){
+  .header-elemnts{
+    flex-flow: column;
+    background-color: chartreuse;
+  }
+}
+
+/* screen-viewport-app with <=375*/
+@media (max-width : 375px){
+  .header-elemnts nav{
+    display: none;
+  }
+
+  .header-elemnts img{
+    width: 100px;
+  }
+  
 }
