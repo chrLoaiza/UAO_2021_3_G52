@@ -1,0 +1,209 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+	color: white;
+	overflow-x: hidden;
+	background-color: rgba(95, 6, 21, 0.87)
+}
+p{
+	font-weight: 400;
+	font-size: 0.8em;
+	font-family: 'Sansita Swashed', cursive;
+
+}
+h2{
+	font-weight: 400;
+	font-size: 3.4em;
+	font-family: 'Fredoka One', cursive;
+}
+a{
+	font-size: 20px;
+
+}
+#menu-logo{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	/* https://bennettfeely.com/clippy/ */
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 95%, 0 0);
+}
+#menu-header{
+	
+	position: absolute;
+	z-index: 2;
+	top: 1vh;
+	width: 99%;
+	display: flex;
+	flex-flow:column;
+    right: -5%;
+	
+}
+#menu-header a
+	{
+		position: relative;
+		width: 200px;
+		height: 55px;
+		margin: 4% 4%;
+		font-family: 'Acme', sans-serif;
+		font-size: 30px;
+        vertical-align: middle;
+        text-align: center;
+		align-items: center;
+		color:rgb(214, 13, 13);
+        background-color: rgb(238, 236, 104);
+        border-radius: 15px;
+	    border-style: ridge;
+	    border-color: rgba(218, 67, 29, 0.548);
+		
+	}
+     .lista:hover
+{
+	background-color: #e0c54d7e;
+}
+
+#logovalorant
+{
+    width: 100%;
+}
+#section-index{	
+	padding: 150px 0;
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	z-index: 1;
+
+	
+}
+#section-index p{
+    position: absolute;
+    left: 50%;
+	width: 600px;
+	margin: 30px auto;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	font-size: 25px;
+		
+	
+}
+#economiavalorant
+{
+    width: 45%;
+}
+#economia
+{
+    position: absolute;
+    bottom: -13%;
+    left: 43%;
+}
+#section-index2 {
+	width: 100vw;
+	background: rgba(44, 32, 32, 0.842);
+	/* https://bennettfeely.com/clippy/ */
+	clip-path: polygon(50% 0%, 100% 9%, 100% 92%, 50% 100%, 0 92%, 0 9%);
+	padding: 100px 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	
+}
+#armasvalorant
+{
+    position: relative;
+    width: 45%;
+    right: 53%;
+    
+}
+#armas
+{
+	position: relative;
+	left: 45%;
+	bottom: 100px;
+}
+#textoeconomia
+{
+	font-size: 40px;
+}
+#textoarma
+{
+	position: relative;
+	left: 40%;
+	font-size: 40px;
+	top: 50px;
+}
+#section-index3{
+	width: 80vw;
+	margin: 100px auto;
+
+	
+	
+}
+#personajes
+{
+	position: relative;
+	left: 40%;
+	bottom: 20px;
+}
+#personajesvalorant
+{
+	position: relative;
+	width: 50%;
+	bottom: 50px;
+	right: 9%;
+}
+#textopersonajes
+{
+	position: relative;
+	left: 45%;
+	font-size: 30px;
+	top: 150px;
+}
+#section-index4
+{
+	
+	clip-path: polygon(50% 0, 100% 10%, 100% 84%, 50% 100%, 0 87%, 0 12%);
+
+	background: rgba(44, 32, 32, 0.842);
+	
+}
+#roles
+{
+	position: relative;
+	left: 45%;
+	bottom: -10px;
+}
+#rolesvalorant
+{
+	position: relative;
+	width: 70%;
+	top: 27px;
+	left: 15%;
+}
+#riotlogo
+{
+	position: relative;
+	width: 40%;
+	left: 28%;
+	bottom: 120px;
+}
+.material-icons
+{
+	position: relative;
+	bottom: 200px;
+	left: 38%;
+}
+.texto-material
+{
+	position: relative;
+	bottom: 225px;
+	left: 40%;
+}

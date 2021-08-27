@@ -1,0 +1,224 @@
+header {
+  background-color: black;
+  color: white;
+  /* height: 40px !important; */
+}
+body {
+  margin: 0px;
+  width: 100% !important;
+}
+a.linkWeb {
+  margin-top: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-left: 40%;
+  font-weight: bold;
+}
+a.linkWeb:hover {
+  text-decoration: white;
+  text-decoration-line: underline;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 14px; */
+}
+#oficialPage {
+  /* margin-top: 20px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.linkWp {
+  /* font-size: 12px; */
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 18% !important;
+  margin: 0px;
+}
+.linkWp:hover {
+  text-decoration: white;
+  text-decoration-line: underline;
+}
+.linkLogo {
+  background-color: white;
+}
+#logo {
+  width: 180px;
+  height: 100px;
+}
+main {
+  overflow-y: auto;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonM {
+  background-color: white;
+  width: 35%;
+  border: none;
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+  height: 40px;
+}
+.buttonM1:hover {
+  background-color: black;
+  border-bottom: 2px solid gray;
+  font-size: 30px;
+  color: white;
+  /* height: 450px; */
+  /* background-image: url("../img/card_hombre_adidasMB.jpg"); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.buttonM2:hover {
+  background-color: black;
+  border-bottom: 2px solid gray;
+  font-size: 30px;
+  color: white;
+  /* height: 450px; */
+  /* background-image: url("../img/card_mujer_adidasMB.jpg"); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.buttonM3:hover {
+  background-color: black;
+  border-bottom: 2px solid gray;
+  font-size: 30px;
+  color: white;
+  /* height: 450px; */
+  /* background-image: url("../img/kids_card.jpg"); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.buttonM1:hover ~ nav {
+  background-color: black;
+}
+
+.menuLateralIzq > li {
+  /* color: red; */
+  width: 100%;
+  margin-bottom: 2px;
+  height: 100px;
+  border: 2px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff;
+  background-color: #696969;
+  text-shadow: #ccc 0 1px 0, #c9c9c9 0 2px 0, #bbb 0 3px 0, #b9b9b9 0 4px 0,
+    #aaa 0 5px 0, rgba(0, 0, 0, 0.1) 0 6px 1px, rgba(0, 0, 0, 0.1) 0 0 5px,
+    rgba(0, 0, 0, 0.3) 0 1px 3px, rgba(0, 0, 0, 0.15) 0 3px 5px,
+    rgba(0, 0, 0, 0.2) 0 5px 10px, rgba(0, 0, 0, 0.2) 0 10px 10px,
+    rgba(0, 0, 0, 0.1) 0 20px 20px; */
+  border-color: none;
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f1c40f 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 400ms ease-in-out;
+  transition: background 400ms ease-in-out;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+.calzado:hover {
+  background-image: url("../img/calzaxox.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #f1c40f;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.ropa:hover {
+  background-image: url("../img/ropa.jfif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: hsl(0, 95%, 62%);
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.accesorios:hover {
+  background-image: url("../img/accesorios.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #40f2fe;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 36px;
+}
+.deportes:hover {
+  background-image: url("../img/deportes2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #f82d97;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.menuLateralIzq {
+  width: 100%;
+  padding-left: 0%;
+  /* background-color: AQUA; */
+  /* height: 400px; */
+}
+.articleIz {
+  /* background-image: url("../img/articleIzqLogo.jpg"); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 32%;
+  height: 100%;
+}
+.articleDer {
+  width: 60%;
+  margin-top: 0%;
+  height: 100%;
+  background-color: black;
+}
+main {
+  height: 72vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/articleIzqLogo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-around;
+}
