@@ -1,0 +1,89 @@
+.main-box{
+    background-color:rgb(245, 255, 213);    
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+    height: 80vh;
+}
+
+#gato{
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    left: 0%;
+}
+
+.glass{    
+    background-color:rgb(156, 160, 223);    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 80%;
+    width: 60%;
+    font: 25px Arial, sans-serif;    
+}
+
+.workspace{
+    padding-left:0px;
+    padding-right:0px;   
+    list-style-type: none;
+    display: flex;
+    border-radius: 20px;
+    height: 80%;
+    width: 60%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+}
+
+.workspace li{    
+    list-style-type: none;
+    display: flex;
+    margin: 5px,5px,5px,5px;
+    padding-left: 0px;
+    padding-right:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#img1{
+    position: absolute;
+    left: 25%;
+}
+
+#img2{
+    position: absolute;
+    right: 30%;
+    top: 38%;
+}
+
+#img3{
+    position: absolute;
+    right: 30%;
+    bottom: 38%;
+}
+
+.sidebar{
+    background-color:rgb(238, 189, 209); 
+    display: flex;
+    position: absolute;
+    right: 0%;
+    padding-left:0px;
+    padding-right:0px;
+    height: 80%;
+    width: 15%;  
+}
+
+.sidebar >ul{
+    list-style-type: none;
+    font: 25px Arial, sans-serif;       
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
