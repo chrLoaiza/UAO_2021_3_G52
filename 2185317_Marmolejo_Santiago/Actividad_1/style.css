@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+:root {
+    --main-color: #d59573;
+    --main-color-hover: #c07d58;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(46, 46, 46, 0.83);
+}
+
+header>h2 {
+    font-weight: 600;
+    color: white;
+}
+
+nav {
+    display: inline;
+}
+
+.nav-item {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.nav-item:hover {
+    color: #ff620e;
+}
+
+#main-img {
+    width: 100%;
+}
+
+.centered-over_image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered-over_image>h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+}
+
+.btn-orange {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    transition: background 0.1s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: var(--main-color-hover);
+}
+
+.main-title {
+    color: var(--main-color);
+    font-size: 50px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    text-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+}
+
+.round-img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+    margin: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex-img {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+footer {
+    padding: 30px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+
+.img-text {
+    color: rgb(133, 133, 133);
+    margin-top: 10px;
+}
