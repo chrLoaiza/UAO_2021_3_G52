@@ -23,6 +23,7 @@ body {
   min-width: 0;
   word-wrap: break-word;
   padding: 3rem;
+  flex-direction: column; /*cambio*/
 }
 
 .img-container {
@@ -32,6 +33,7 @@ body {
   box-shadow: 4px 4px 15px #8791c4;
   padding: 8px;
   box-sizing: border-box;
+  border-radius: 50%; /*cambio*/
 }
 
 .photo {
@@ -53,7 +55,7 @@ body {
   font-size: 21px;
   margin-top: 0;
   margin-bottom: 8px;
-  font-weight: 500;
+  font-weight: 600; /*cambio*/
   line-height: 26px;
   box-sizing: border-box;
 }
@@ -83,7 +85,7 @@ body {
   transition: transform 0.3s ease-in-out;
   padding: 5px 8px;
   border-radius: 50%;
-  display: flex;
+  display: flex; 
   justify-content: center;
   text-decoration: none;
   height: 24px;
@@ -100,3 +102,4 @@ body {
   transform: scale(1.2);
   color: #202020;
 }
+
