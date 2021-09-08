@@ -21,6 +21,11 @@ header {
   margin-bottom: 70px;
 }
 
+.headerelements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /* Elements that have class="nav-button" */
 .nav-button {
   background: white;
@@ -74,15 +79,19 @@ main {
   height: 150px;
 }
 
-.borders {
+.main_img {
   width: 600px;
   height: 500px;
+}
+
+.borders {
+  
   border-radius: 10px;
   border: 1px solid #333;
 }
 
 .big-container {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .big-container a {
@@ -90,38 +99,36 @@ main {
   height: 500px;
 }
 
-.header-elemnts{
+/* .header-elements {
   display: flex;
   flex-flow: row;
-  align-items: center;
-  height: 150px;
-  margin-bottom: 10px;
   background: aquamarine;
-  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  margin-bottom: 15px;
 }
 
-@media (orientation: landscape){
-  .header-elemnts {
-    background-color: blue;
-  }
+.logo {
+  width: 150px;
 }
 
-/* screen-viewport-app with <=650*/
-@media (max-width : 650px){
-  .header-elemnts{
-    flex-flow: column;
-    background-color: chartreuse;
-  }
-}
 
-/* screen-viewport-app with <=375*/
-@media (max-width : 375px){
-  .header-elemnts nav{
-    display: none;
+/* -> width <= 620px*/
+/* @media (max-width: 620px) {
+  .main_img {
+    width: 400px;
+    height: 300px;
   }
 
-  .header-elemnts img{
+  .ad-container img {
     width: 100px;
+    height: 100px;
   }
-  
-}
+} */
+
+/* -> width => 728px*/
+/*@media (min-width: 728px) {
+
+} */
