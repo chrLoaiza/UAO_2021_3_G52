@@ -1,4 +1,5 @@
 Taller JS_1:
-  ☐ Cambiar Bordes de los input cuando haga el evento focus
+  ☐ Cambiar Estilos de los input cuando haga el evento focus
+  ☐ Borrar la clase focus cuando hace el blur
   ☐ Hacer un Alert cuando presione (onclick) que muetsre un mensaje
   ☐ Crear un PR indicandome a mi como reviewer
