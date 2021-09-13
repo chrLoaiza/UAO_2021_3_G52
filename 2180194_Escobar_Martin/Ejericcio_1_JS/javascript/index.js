@@ -21,7 +21,7 @@ window.onload = () => {
             inputs[i].value = '';
           }
         }
-        alert('Formulario enviado con èxito');
+        alert('Formulario enviado con éxito');
       });
     }
   }
