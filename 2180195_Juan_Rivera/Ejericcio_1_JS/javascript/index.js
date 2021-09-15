@@ -8,9 +8,7 @@ for(let i = 0; i < inputs.length; i++){
   inputs[i].addEventListener('focus', (event) => {
     event.target.style.border = '2px solid rgb(34, 32, 155)';
   });
-}
 
-for(let i = 0; i < inputs.length; i++){
   inputs[i].addEventListener('blur', (event) => {
     event.target.style.border = '1px solid rgb(0, 238, 255)';
   });
