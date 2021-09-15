@@ -143,3 +143,9 @@ footer {
   color: rgb(34, 34, 34);
   background-color: rgb(131, 242, 250);
 }
+
+/**Dinamyc Classes*/
+.focus {
+  background: red;
+  color: aqua;
+}
