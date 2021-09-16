@@ -112,49 +112,23 @@
 //   document.getElementById('members').innerHTML += heroe;
 // }
 
-console.log(1)
+console.log(1);
 /**
  * Promises
  */
-fetch("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json")
-  .then((response) => {
-    console.log(2)
-    return response.json();
-  })
-  .then((parseObj) => {
-    document.getElementById("membersName").innerHTML = parseObj["squadName"];
-    const members = parseObj.members;
-    
-    console.log(3)
-    for (let index = 0; index < members.length; index++) {
-      const element = members[index];
-      const heroe = `
-        <div>
-          <p class="title">Name</p>
-          <p class="value"> ${element.name}</p>
-          <p class="title">Secret Identity</p>
-          <p class="value"> ${element.secretIdentity}</p>
-        <div>
-        `;
-      document.getElementById("members").innerHTML += heroe;
-    }
-  });
-  console.log(4)
+// fetch("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json")
+//   .then((response) => {
+//     console.log(2)
+//     return response.json();
+//   })
+//   .then((parseObj) => {
+//     document.getElementById("membersName").innerHTML = parseObj["squadName"];
+//     const members = parseObj.members;
 
-/**
- * ASYNC/AWAIT
- */
-// document.onload = (async function () {
-//   const request = await fetch(
-//     "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json"
-//   );
-//   const parseObj = await request.json();
-//   document.getElementById("membersName").innerHTML = parseObj["squadName"];
-//   const members = parseObj.members;
-
-//   for (let index = 0; index < members.length; index++) {
-//     const element = members[index];
-//     const heroe = `
+//     console.log(3)
+//     for (let index = 0; index < members.length; index++) {
+//       const element = members[index];
+//       const heroe = `
 //         <div>
 //           <p class="title">Name</p>
 //           <p class="value"> ${element.name}</p>
@@ -162,6 +136,35 @@ fetch("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
 //           <p class="value"> ${element.secretIdentity}</p>
 //         <div>
 //         `;
-//     document.getElementById("members").innerHTML += heroe;
-//   }
-// })();
+//       document.getElementById("members").innerHTML += heroe;
+//     }
+//   });
+//   console.log(4)
+
+/**
+ * ASYNC/AWAIT
+ */
+
+async function doApiRequest() {
+  const request = await fetch(
+    "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json"
+  );
+  const parseObj = await request.json();
+  document.getElementById("membersName").innerHTML = parseObj["squadName"];
+  const members = parseObj.members;
+
+  for (let index = 0; index < members.length; index++) {
+    const element = members[index];
+    const heroe = `
+        <div>
+          <p class="title">Name</p>
+          <p class="value"> ${element.name}</p>
+          <p class="title">Secret Identity</p>
+          <p class="value"> ${element.secretIdentity}</p>
+        <div>
+        `;
+    document.getElementById("members").innerHTML += heroe;
+  }
+}
+
+this.doApiRequest();
