@@ -74,7 +74,7 @@
     </main>
     <footer class="root-container">
       <h3>Mail us!</h3>
-      <form id="form" class="footer-form">
+      <form id="form" method="POST" class="footer-form">
         <label for="name">
           <p>Name:</p>
           <input
@@ -95,6 +95,8 @@
             class="input"
             name="email"
             type="email"
+            onfocus="focusElement(event)"
+            onblur="blurElement(event)"
           />
         </label>
         <label for="description">
@@ -105,6 +107,8 @@
             class="input"
             name="description"
             type=""
+            onfocus="focusElement(event)"
+            onblur="blurElement(event)"
           ></textarea>
         </label>
       </form>

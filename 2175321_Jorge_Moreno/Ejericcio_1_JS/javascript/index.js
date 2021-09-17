@@ -20,16 +20,41 @@ function formSubmited(event) {
     mailData[inputEle.name] = inputEle.value;
   }
   console.log(mailData);
+  imprimir();
   //alert('Listo para enviar');
 }
 function focusElement(event) {
+  console.log('entro al foco');
   const element = event.srcElement;
+  debugger
   element.classList.toggle('focus', true);
+
 
 
 
 }
 // leer evento click
 function blurElement(event) {
-console.log('salio del foco');
+  const element = event.srcElement;
+  element.classList.toggle('focus', false);
+  debugger
+  console.log('salio del foco');
+}
+
+function imprimir() {
+  var name = document.getElementById('inputName').value;
+  var email = document.getElementById('inputMail').value;
+  var reason = document.getElementById('textArea').value;
+
+
+  alert("NAME : " + name +
+    + "EMAIL : " + email +
+    + "REASON : " + reason);
+
+
+
+  name = "";
+  email = "";
+  reason = "";
+
 }

@@ -85,7 +85,6 @@ main {
 }
 
 .borders {
-  
   border-radius: 10px;
   border: 1px solid #333;
 }
@@ -107,7 +106,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.footer-form{
+.footer-form {
   display: flex;
   flex-flow: column;
   width: 300px;
@@ -143,6 +142,12 @@ footer {
   color: rgb(34, 34, 34);
   background-color: rgb(131, 242, 250);
 }
-.focus{
-  background-color: red;
+.focus {
+  border-color:none;
+  background-color: #80ffdb;
+  box-shadow: -1px -1px 10px 4px rgba(4, 68, 204, 0.44);
+}
+.blur {
+  background-color: white;
+  box-shadow: none;
 }
