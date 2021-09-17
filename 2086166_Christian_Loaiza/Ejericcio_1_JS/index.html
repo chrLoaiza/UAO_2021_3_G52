@@ -74,7 +74,12 @@
     </main>
     <footer class="root-container">
       <h3>Mail us!</h3>
-      <form id="form" class="footer-form">
+      <form
+        id="form"
+        class="footer-form"
+        onFocusIn="focusElement(event)"
+        onFocusOut="blurElement(event)"
+      >
         <label for="name">
           <p>Name:</p>
           <input
