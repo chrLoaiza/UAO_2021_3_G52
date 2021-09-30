@@ -112,18 +112,20 @@
 //   document.getElementById('members').innerHTML += heroe;
 // }
 
+console.log(1);
 /**
  * Promises
  */
 // fetch("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json")
 //   .then((response) => {
+//     console.log(2)
 //     return response.json();
 //   })
 //   .then((parseObj) => {
 //     document.getElementById("membersName").innerHTML = parseObj["squadName"];
 //     const members = parseObj.members;
-//     //debugger
 
+//     console.log(3)
 //     for (let index = 0; index < members.length; index++) {
 //       const element = members[index];
 //       const heroe = `
@@ -137,11 +139,13 @@
 //       document.getElementById("members").innerHTML += heroe;
 //     }
 //   });
+//   console.log(4)
 
 /**
  * ASYNC/AWAIT
  */
-document.onload = (async function () {
+
+async function doApiRequest() {
   const request = await fetch(
     "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json"
   );
@@ -161,4 +165,6 @@ document.onload = (async function () {
         `;
     document.getElementById("members").innerHTML += heroe;
   }
-})();
+}
+
+this.doApiRequest();

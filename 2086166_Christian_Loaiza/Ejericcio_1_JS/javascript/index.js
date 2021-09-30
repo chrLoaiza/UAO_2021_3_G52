@@ -23,16 +23,21 @@ function formSubmited(event) {
   alert("Listo para enviar");
 }
 
+document.querySelector('#form')
+  .addEventListener('focusin', focusElement);
+
 function focusElement(event) {
   if (event.target) {
     const tag = event.target.tagName;
     if (tag === "INPUT" || tag === "TEXTAREA") {
       event.target.classList.add("focus");
-      event.target.value = event.target.value.toUpperCase()
     }
   }
 }
 
+document.querySelector('#form')
+  .addEventListener('focusout', blurElement);
+  
 function blurElement(event) {
   if (event.target) {
     const tag = event.target.tagName;
