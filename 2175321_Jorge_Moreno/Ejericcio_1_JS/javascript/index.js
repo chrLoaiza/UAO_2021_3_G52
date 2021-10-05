@@ -47,9 +47,7 @@ function imprimir() {
   var reason = document.getElementById('textArea').value;
 
 
-  alert("NAME : " + name +
-    + "EMAIL : " + email +
-    + "REASON : " + reason);
+  alert(`Hi! ${name}    your email is ${email} and you say that ${reason} `);
 
 
 
