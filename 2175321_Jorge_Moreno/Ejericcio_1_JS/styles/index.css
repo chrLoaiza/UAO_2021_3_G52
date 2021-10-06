@@ -106,7 +106,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-.footer-form {
+.footer-form{
   display: flex;
   flex-flow: column;
   width: 300px;
@@ -150,4 +150,11 @@ footer {
 .blur {
   background-color: white;
   box-shadow: none;
+}
+
+/**Dinamyc Classes*/
+.focus {
+background-color: rgb(101, 199, 199);
+color: rgb(185, 41, 185);
+font-weight: bold;
 }
