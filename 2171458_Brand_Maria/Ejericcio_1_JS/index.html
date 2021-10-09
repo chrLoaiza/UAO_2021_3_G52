@@ -83,6 +83,8 @@
             class="input"
             name="nombre"
             type="text"
+            onFocusIn="focusElement(event)"
+            onFocusOut="blurElement(event)"
           />
         </label>
         <label for="email">
@@ -93,6 +95,8 @@
             class="input"
             name="email"
             type="email"
+            onFocusIn="focusElement(event)"
+            onFocusOut="blurElement(event)"
           />
         </label>
         <label for="description">
@@ -103,6 +107,8 @@
             class="input"
             name="description"
             type=""
+            onFocusIn="focusElement(event)"
+            onFocusOut="blurElement(event)"
           ></textarea>
         </label>
       </form>

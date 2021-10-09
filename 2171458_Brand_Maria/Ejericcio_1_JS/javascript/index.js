@@ -2,13 +2,13 @@
 
 // functionBtn.addEventListener("click", this.buttonClicked);
 
-function dobleClick(event) {
-  // alert('I was double clicked, yaaay!!!!!!!!!');
-}
+// function dobleClick(event) {
+//   // alert('I was double clicked, yaaay!!!!!!!!!');
+// }
 
-function buttonClicked(event) {
-  // alert("Normal Function");
-}
+// function buttonClicked(event) {
+//   // alert("Normal Function");
+// }
 
 function formSubmited(event) {
   let element = document.getElementById('form').children
@@ -20,5 +20,23 @@ function formSubmited(event) {
     mailData[inputEle.name] = inputEle.value;
   }
   console.log(mailData);
-  //alert('Listo para enviar');
+  alert('Ya no hay salida');
 }
+
+function focusElement(event) {
+  const element = event.srcElement;
+  if(element.id == 'inputName'){
+    element.classList.toggle('focusName',true);
+  }else if(element.id == 'inputMail'){
+    element.classList.toggle('focusMail',true);
+  }else if(element.id == 'textArea'){
+    element.classList.toggle('focusArea',true);
+  }
+}
+
+function blurElement(event){
+  const element = event.srcElement;
+  element.classList.toggle('focusName',false);
+  element.classList.toggle('focusMail',false);
+  element.classList.toggle('focusArea',false);
+} 

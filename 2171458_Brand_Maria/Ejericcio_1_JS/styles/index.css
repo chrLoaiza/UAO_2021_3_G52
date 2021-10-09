@@ -141,5 +141,22 @@ footer {
   padding: 5px;
   font-weight: bold;
   color: rgb(34, 34, 34);
-  background-color: rgb(131, 242, 250);
+  background-color: rgb(115, 132, 230);
 }
+
+.focusName{
+  background: rgb(250, 121, 143);
+  text-transform: uppercase;
+  color: gold;
+}
+
+.focusMail{
+  background: rgb(111, 109, 224);
+  color: white;
+  border: none;
+  border-bottom: 5px solid orange;
+}
+
+.focusArea{
+  background: rgb(204, 172, 255);
+} 
