@@ -2,7 +2,7 @@
 const request_btn = document.getElementById("request-btn");
 //const restr =0;
 request_btn.addEventListener("click",this.genereRestaurante.bind(this))
- 
+
 async function genereRestaurante(){
   console.log("entre!");
   let restauranteJS = "";
@@ -32,5 +32,9 @@ async function genereRestaurante(){
           </div>
         </div>`
     } 
+    window.addEventListener("request-btn", function(genereRestaurante){
+      document.getElementById("loader").classList.toggle("load");
+    })
     cardList.innerHTML = restauranteJS;
 }
+
