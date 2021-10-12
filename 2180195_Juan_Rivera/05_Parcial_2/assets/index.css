@@ -1,0 +1,336 @@
+@font-face {
+  font-family: pokemon;
+  src: url(../assets/fuentes/PokemonSolid.ttf);
+}
+
+@font-face {
+  font-family: pixel;
+  src: url(../assets/fuentes/Minecraft.ttf);
+}
+
+body {
+  width: calc(100vw - 8px);
+  height: 100vh;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin: 0;
+}
+
+h1{
+  color: #FFCB03;
+  margin: 0;
+  font-family: pokemon;
+  font-size: 80px;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #3B5CA2;
+}
+
+section{
+  width: 100%;
+  display: flex;
+}
+
+main{
+  width: 100%;
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: #323841;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #6d7277;
+  border-radius: 50px;
+}
+
+.search{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.search p{
+  font-family: pixel;
+  font-size: 25px;
+  color: white;
+  margin: 0 35px;
+}
+
+.searcher{
+  height: 60px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50px;
+  display: flex;
+  margin: 0;
+  background-color: black;
+}
+.searcher input{
+  height: 99.5%;
+  width: 80%;
+  padding: 0 0 0 20px;
+  font-family: pixel;
+  font-size: 21px;
+  outline: none;
+  border: none;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  background-color: #3B5CA2;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: .2s;
+}
+
+.icon i{
+  font-size: 25px;
+  margin-right: 5px;
+  color: #FFCB03;
+  font-weight: bold;
+}
+
+.icon:hover{
+  background-color: #FFCB03;
+}
+
+.icon:hover i{
+  color: #3B5CA2;
+}
+
+#request-btn {
+  position: relative;
+  background-color: white;
+  font-family: pixel;
+  font-size: 20px;
+  color: white;
+  width: 300px;
+  height: 60px;
+  padding: 0px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  outline: none;
+}
+
+#request-btn:hover{
+  cursor: pointer;
+}
+
+#request-btn:hover::before{
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 30px;
+  background: RED;
+  animation: hoverBtn 3s linear infinite;
+}
+
+#request-btn::after{
+  content: 'LOOK FOR POKEMON';
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 2.5px;
+  background: #49155B;
+  border-radius: 50px;
+  margin-bottom: .5px;
+  margin-left: .5px;
+}
+
+.bg-image{
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/home-bg.png);
+  background-size: cover;
+}
+
+.cards{
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.pokeCard{
+  position: relative;
+  background-color: black;
+  transition: .2s;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.pokeCard:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.5);
+  animation: hoverCard 3s linear infinite;}
+
+.noFocus{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2;
+  transition: .3s;
+  opacity: 1;
+}
+
+.noFocus:hover{
+  opacity: 0;
+}
+
+.container{
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.container > .img-container, .info-container{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
+.img-container{
+  width: 50%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  left: -5%;
+}
+
+.img-container > .pokeimg{
+  margin-left: 10px;
+  width: 85%;
+}
+.info-container{
+  justify-content: center;
+  width: 53%;
+  margin-left: 43%;
+}
+
+.info-container p{
+  letter-spacing: 1.5px;
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+  font-family: pixel;
+  font-size: 18px;
+}
+
+.bg-card{
+  width: 400px;
+  z-index: -1;
+}
+
+.loading{
+  margin-top: 80px;
+  width: 20%;
+  animation: tada 1.2s linear infinite;
+}
+
+#noData{
+  font-family: pixel;
+  color: white;
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes hoverBtn{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hoverCard{
+  0%{
+    box-shadow: 0px 0px 45px 45px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 45px -15px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 45px -15px rgba(255,255,255,0.5);
+  }
+  25%{
+    box-shadow: 0px 0px 45px -5px rgba(238, 55, 55, 0.5);
+    -webkit-box-shadow: 0px 0px 45px -5px rgba(238, 55, 55, 0.5);
+    -moz-box-shadow: 0px 0px 45px -5px rgba(238, 55, 55, 0.5);
+  }
+  50%{
+    box-shadow: 0px 0px 45px 4px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 45px 4px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 45px 4px rgba(255,255,255,0.5);
+  }
+  75%{
+    box-shadow: 0px 0px 45px -5px rgba(238, 55, 55, 0.5);
+    -webkit-box-shadow: 0px 0px 45px -5px rgba(238, 55, 55, 0.5);
+    -moz-box-shadow: 0px 0px 45px -5px rgba(238, 55, 55, 0.5);
+  }
+  100%{
+    box-shadow: 0px 0px 45px -15px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 0px 45px -15px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 45px -15px rgba(255,255,255,0.5);
+  }
+}
