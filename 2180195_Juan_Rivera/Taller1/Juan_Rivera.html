@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bird Gallery</title>
+</head>
+<body>
+    <header class='header'>
+        <div><img src="./portada.jpeg" alt="Portada"></div>
+        <p>BIRD GALLERY</p>
+
+        <nav>
+            <div>GALERÍA</div>
+            <div>EQUIPO</div>
+            <div>MISIÓN</div>
+            <div>VISIÓN</div>
+        </nav>
+    </header>
+
+    <section class='section'>
+        <main role="main" class='main'>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/torito.jpg" alt="Torito Cabecirrojo">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Torito Cabecirrojo</p>
+                    <p class='title'><i>-Eubucco bourcierii-</i></p>
+                    <p class="desc">Es uno de los toritos más comunes de los Andes colombianos, 
+                        generalmente presente en badadas mixtas. El nombre de esta ave significa 
+                        barbudo hermoso y deriva de la raíz griega eu = hermoso y del latín bucco = barbudo. 
+                        Bourcierii se acuñó en honor al coleccionista y naturalista frances Jules Bourcier.</p>
+                </div>
+                <div class="sound"><i id="torito" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/mieleroVerde.jpg" alt="Mielero Verde">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Mielero verde</p>
+                    <p class='title'><i>-Chlorophanes spiza-</i></p>
+                    <p class="desc">Tangara pequeña y verde de tierras bajas tropicales y estribaciones. 
+                        Se encuentra en bosques húmedos siempreverdes, bordes y jardines. Se alimenta en todos los niveles, 
+                        sobre todo en el dosel de árboles y arbustos en fructificación y floración. Nota el pico delgado y curvado. </p>
+                </div>
+                <div class="sound"><i id="mieleroVerde" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/barranquero.jpg" alt="Barranquero">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Barranquero</p>
+                    <p class='title'><i>-Momotus momota-</i></p>
+                    <p class="desc">Barranquero de tierras bajas al oriente de los Andes, estrechamente relacionado con M. 
+                        aequatorialis y algunas veces tratados como conespecíficos. Momotus proviene del nombre específico Ramphastos momota, 
+                        mientras que el epíteto momota es un nombre azteca utilizado para referirse a un ave de corona azul habitante de las regiones tropicales.</p>
+                </div>
+                <div class="sound"><i id="barranquero" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/tucan.jpg" alt="Tucancito rabirrojo">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Tucancito rabirojo</p>
+                    <p class='title'><i>-Aulacorhynchus haematopygus-</i></p>
+                    <p class="desc">Se distingue de otros tucancitos verdes por rabadilla roja y su canto es un cua, cua algo nasal y repetido. 
+                        Su nombre Aulacorhynchus proviene del griego aulax que significa surco y rhunkhos que significa pico. 
+                        El epíteto haematopygus proviene del griego haima, que significa sangre y pugus  que siginifica rabadilla.</p>
+                </div>
+                <div class="sound"><i id="tucan" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/tangara.jpg" alt="Tangara Dorada">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Tángara dorada</p>
+                    <p class='title'><i>-Tangara arthus-</i></p>
+                    <p class="desc">La Tángara Dorada (Tangara arthus) como su nombre lo indica se caracteriza por tener un color amarillo casi dorado.
+                         Es un ave bastante común en Colombia. El epíteto arthus se acuñó como reconocimiento al editor francés Arthus Bertrand.</p>
+                </div>
+                <div class="sound"><i id="tangara" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/multicolor.jpg" alt="Tángara Multicolor">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Tángara multicolor</p>
+                    <p class='title'><i>-Chlorochrysa nitidissima-</i></p>
+                    <p class="desc">Las especies del género Chlorochrysa son similares y afines a Tángara y usualmente se encuentran 
+                        acompañadas por especies de ese género, difieren en su voz, comportamiento, tarsos más robustos y pico más largo y delgado. 
+                        Su nombre Chlorochrysa deriva de las raíces griegas khloros = verde y khrusos = dorado. El epíteto nitidissima proviene 
+                        del latín nitidissimus y significa más brillante. </p>
+                </div>
+                <div class="sound"><i id="multicolor" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/primavera.jpg" alt="Tángara Primavera">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Tángara primavera</p>
+                    <p class='title'><i>-Anisognathus somptuosus-</i></p>
+                    <p class="desc">La Tángara Primavera es el más común y ampliamente distribuido de los clarineros en Colombia. 
+                        Su nombre Anisognathus deriva de las raíces griegas anisos = desigual y gnathos = mandíbula inferior. Sumptuosus 
+                        deriva del latín y significa extravagante.</p>
+                </div>
+                <div class="sound"><i id="primavera" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/coronada.jpg" alt="Tángara Coronada">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Tángara coronada</p>
+                    <p class='title'><i>-Tangara xanthocephala-</i></p>
+                    <p class="desc">Esta Tángara habita principalmente en los Andes. Su nombre Tangara deriva de la lengua Tupí y significa bailarín. 
+                        Su epíteto xanthocephala deriva del griego xanthos = amarillo y del latín cephala = cabeza, haciendo referencia a uno de sus 
+                        caracteres más distintivos.</p>
+                </div>
+                <div class="sound"><i id="coronada" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/copeton.jpg" alt="Copetón Común">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Copetón común</p>
+                    <p class='title'><i>-Zonotrichia capensis-</i></p>
+                    <p class="desc">Común en áreas abiertas y campos agrícolas, una de las aves más comunes entre 1000 y 3700 m de altura sobre el nivel del mar. 
+                        Su nombre zonotrichia deriva de las raíces griegas zone = collar y thrix = pluma. Su epíteto capensis hace referencia al cabo de buena 
+                        esperanza en Suráfrica.</p>
+                </div>
+                <div class="sound"><i id="copeton" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/azuleja.jpg" alt="Tángara Azuleja">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Tángara azuleja</p>
+                    <p class='title'><i>-Thraupis episcopus-</i></p>
+                    <p class="desc">El nombre genérico femenino Thraupis proviene de la palabra griega «thraupis»: pequeño pájaro desconocido mencionado 
+                        por Aristóteles, tal vez algún tipo de pinzón (en ornitología thraupis significa «tangara»); y el nombre de la especie «episcopus» del 
+                        latín tardío y significa «obispo, episcopal», en una referencia general a plumajes azul o púrpura.</p>
+                </div>
+                <div class="sound"><i id="azuleja" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/azulamarillo.jpg" alt="Guacamaya Azulamarillo">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Guacamaya azulamarillo</p>
+                    <p class='title'><i>-Thraupis episcopus-</i></p>
+                    <p class="desc">Esta Guacamaya se caracteriza por su inconfundible forma y colores lo cual la hace muy llamativa y atractiva para su tráfico. 
+                        Su nombre Ara es una onomatopeya del lenguaje Tupí que significa ave o guacamayo. Ararauna también deriva del lenguaje Tupí y significa 
+                        loro grande y oscuro. </p>
+                </div>
+                <div class="sound"><i id="azulamarillo" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+            <div class='card'>
+                <div class="imgCard">
+                    <img src="./images/pigua.jpg" alt="Pigua">
+                </div>
+                <div class="infoCard">
+                    <p class='title title1'>Pigua</p>
+                    <p class='title'><i>-Milvago Chimachima-</i></p>
+                    <p class="desc">La Pigua se encuentra en todo el país excepto Nariño. Es un ave conspicua de terreno abierto que a menudo se posa sobre el 
+                        ganado para buscar garrapatas. Su nombre Milvago proviene de las raíces latinas milvus = cometa y ago = que se parece a. E epíteto 
+                        chimachima proviene de una onomatopeya de una localidad de Argentina para referirse a un caracara.</p>
+                </div>
+                <div class="sound"><i id="pigua" onclick="hola(this.id)" title='Escuchar sonido' class="fa fa-volume-up"></i></div>
+            </div>
+
+        </main>
+    
+        <aside class='aside'>
+
+            <div class='about'>
+                <h1>ABOUT ME</h1>
+                <div class="wrap-image">
+                    <img src="./Lina.jpeg" alt="Lina Ortega">
+                </div>
+                <h3>Lina Marcela Ortega Gaviria</h3>
+                <p class='me'>Soy estudiante de mercadeo y publicidad de séptimo semestre, aficionada por la fotografía de avifauna. Desde que inicié esta maravillosa 
+                    experiencia he aprendido a amar y respetar a estos increíbles seres. Mi mayor pasión es poder observarlos, conocerlos a detalle en sus 
+                    diferentes hábitats y capturar estos momentos llenos de vida y color.
+                </p>
+            </div>
+            <div class='about'>
+                <h2>Mis premios</h2>
+                <div class="container">
+                    <div class="item">
+                      <img src="./premio1.jpeg" alt="Fundación impulso verde"/>
+                    </div>
+                </div>
+                <h4>Fundación impulso verde</h4>
+                <h4>(1er puesto)</h4>
+                <p class='me'>Concurso de fotografía realizado en el mes de junio del presente año (2021) por la Fundación Impulso Verde en tres ciudades, Bogotá, Medellín y Cali. 
+                    Obtuve el 1er puesto gracias a la fotografía de un colibrí zafiro cabeciazul que fue una de las seleccionada de la ciudad de Cali, para ser una de las 
+                    tres ganadoras</p>
+
+                
+                <div class="container">
+                    <div class="item">
+                      <img src="./premio2.jpeg" alt="Fundación impulso verde"/>
+                    </div>
+                </div>
+                <h4>Zoológico de Cali</h4>
+                <h4>(1er puesto)</h4>
+                <p class='me'>Concurso de fotografía realizado en el mes de junio del presente año (2021) por la Fundación Impulso Verde en tres ciudades, Bogotá, Medellín y Cali. 
+                    Obtuve el 1er puesto gracias a la fotografía de un colibrí zafiro cabeciazul que fue una de las seleccionada de la ciudad de Cali, para ser una de las 
+                    tres ganadoras</p>
+            </div>
+            
+        </aside>
+    </section>
+
+    <footer class="footer">
+        <div class="nomitad"></div>
+        <div class="mitad">
+            <p>Redes sociales</p>
+            <a target="_blank" href="https://www.facebook.com/search/top?q=ogaviria.ph"><i class="fa fa-facebook-square"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ogaviria.ph/"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <div class="mitad">
+            <p class='fotext'>BIRD GALLERY</p>
+        </div>
+        <div class="nomitad"></div>
+    </footer>
+
+    <script>
+
+        var audio;
+        var id = '';
+
+        function hola(e){
+            if(e === id){
+                console.log('hola')
+                if(audio){
+                    if(!audio.paused && !audio.ended){
+                        console.log('pausado')
+                        audio.pause();
+                    }else{
+                        audio.play();
+                    }
+                }
+            }else{
+                id = e;
+                if(audio){
+                    if(!audio.ended){
+                        console.log('pausado')
+                        audio.pause();
+                    }
+                }
+                audio = new Audio(`../sounds/${e}.mp3`);
+                audio.play();
+                console.log(e)
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
