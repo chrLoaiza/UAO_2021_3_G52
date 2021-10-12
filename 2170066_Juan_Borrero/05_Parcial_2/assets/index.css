@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 0%, rgba(68, 51, 2, 1) 13%, rgba(247, 187, 7, 1) 62%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 3px;
+    font-weight: 300;
+}
+
+hr {
+    border: .1px solid #fff;
+}
+
+
+/*  */
+
+:root {
+    --a: #F0A500;
+    --b: #334756;
+    --c: #D4B499;
+}
+
+
+/*  */
+
+header h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+#request-btn {
+    width: 150px;
+    padding: 10px;
+    position: relative;
+    left: calc(50% - 75px);
+}
+
+
+/*  */
+
+#users {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-container {
+    border: 2px inset rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(calc(100% / 3) - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--c);
+    justify-content: center;
+}
+
+.user-header {
+    background: var(--b);
+    border-radius: 10px;
+}
+
+.user-header img {
+    display: block;
+    width: 75px;
+    object-fit: scale-down;
+    margin: 5px auto;
+}
+
+.user-body p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 19px;
+    line-height: 19px;
+}
+
+.user-body span {
+    color: #fea;
+    padding: 0 10px 0;
+}
+
+.user-heade {
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 5vh;
+    border-radius: 5%;
+    border: none;
+    transition: all;
+    background: var(--b);
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+}
+
+.btn:hover {
+    transition: all;
+    box-shadow: rgba(255, 255, 255, 0.85) 0px 3px 8px;
+}
+
+@keyframes example {
+    from {
+        background-color: #22577A;
+    }
+    to {
+        background-color: #FFE194;
+    }
+}
