@@ -96,20 +96,31 @@ header .text_header{
 -> Informacion que es*/
 
 .Contenedor_queEs{
-    display: flex;
-    width: 40%;
-    text-align: justify;
-    flex-direction: column;
-    margin: 8px 0 55px 5%;
-    float: left;
+    display: grid;
+    width: 100%;
+    text-align: justify; 
+    grid-template-areas: "text video"
+                         "img video"; 
     
 }
 
 .imagen_Ilustracion{
     width: 300px;
-    justify-content: left;
-    margin: -15% 0 0 15%;
-    float: left;
+    grid-area: img;
+    justify-self: center;
+
+}
+
+.text_queEs{
+    grid-area: text;
+}
+
+.video{
+    width: 100%;
+    grid-area: video;
+    box-sizing: border-box;
+    margin-left: 15px;
+    align-self: center;
 }
 
 .titulo{
@@ -121,13 +132,6 @@ header .text_header{
     box-shadow: rgba(5, 41, 6, 0.712) 0px 2.2px 0;
 }
 
-video{
-    justify-content: left;
-    padding-bottom: 0px;
-    margin: 100px 5% 100px 5%;
-    width: 40%;
-}
-
 p{
     margin: 18px 5px;
     font-size: 18px;
@@ -137,64 +141,64 @@ p{
 
 /**Configuración de cuadro con imagenes*/
 .portafolio{
-    align-items: center;
     background: linear-gradient(to right, hsla(76, 77%, 45%, 0.13), hsla(209, 65%, 52%, 0.116)), url(); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: 10px -10px;
 }
 
 .galeria{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.section_companias{
+    display: flex;
+    flex-direction: row;
 }
 
 .imagen_galeria{
     display: flex;
-    width: 50%;
-    height: 10vw;
-    justify-content: right;
-    /**flex-wrap: wrap;*/
-    margin: 20px 5%;
-    border-image: fill;
+    width: calc(50% - 40px);
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid green;
 }
 
 .imagen{
-    width: 50%;
-    height: 50
-   /** margin-bottom: 30px;
-    object-fit: fill;
-    display: flex;
-    width: 50px;
-    height: 250px;*/
+    width: 100%;
+    
 }
 
 /**Configuración de EMPRESAS*/
 .Contenedor_Empresas_Apoya{
     display: flex;
-    width: 40%;
     text-align: justify;
     flex-direction: column;
-    margin: 75px 0 75px 5%;
-    float: left;
+    
+    width: calc(50% - 28px);
 }
 
 .cubiculo{
     display: flex;
-    width: 40%;
-    height: 20vw;
+    width: 20%;
+    height: 20%;
     justify-content: right;
     /**flex-wrap: wrap;*/
-    margin: 20px 5%;
+    margin: 10px;
+    padding: 5px;
 }
 
 /**Configuración de NOTICIAS*/
 .Contenedor_News{
     display: flex;
-    width: 40%;
     text-align: justify;
     flex-direction: column;
-    margin: 75px 5% 75px 0;
-    float: right; 
+    flex: 1;
+    margin: 0 10px;
+    width: calc(50% - 28px);
 }
 
 .noticias_cubo{
@@ -228,25 +232,23 @@ p{
 
 .imagenNoticia{
     display: flex;
-    width: 40%;
-    height: 10vw;
+    width: 70%;
+    height: 70%;
     justify-content: right;
     /**flex-wrap: wrap;*/
     margin: 20px 5%;
     
 }
 
-.imagen{
+.main{
     display: flex;
-    width: 40%;
-    height: 20vw;
-    justify-content: right;
-    /**flex-wrap: wrap;*/
-    margin: 20px 5%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .formulario{
-    margin: 80px;
+    width: 80%;
+    margin: 0 auto;
     border-radius: 10px;
     background-color: hsla(135, 79%, 53%, 0.219);
     box-shadow: 5px 5px 10px -3px #000000c2, -5px -5px 15px 3px #084119a8;
@@ -263,8 +265,6 @@ p{
 
 /**Configuración de FOOTER*/
 .imagen_galeria p{
-    width: 40%;
-    margin: 5px 0 5px 10%;
     font-size: 20px;
    /** margin-right: 300px;*/
 }
@@ -285,4 +285,33 @@ p{
     align-items: center;
     font-size: 10px;
     margin: 1 0;
+}
+
+/** Diseño de últimos cambios 09/10/2021*/
+
+
+/** Diseño de eventos 13/10/2021*/
+.FocElemt{
+    color: rgb(255, 255, 255);
+    background: rgb(90, 134, 19);
+}
+
+button{
+    background-color: rgb(90, 134, 2);
+    font-size: 20px;
+    border-radius: 18px;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: rgba(8, 98, 8, 0.76);
+}
+
+button:active{
+    background-color: rgb(29, 107, 29);
+}
+
+button:focus{
+    outline: none;
 }
