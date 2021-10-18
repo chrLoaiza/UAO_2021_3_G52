@@ -1,0 +1,91 @@
+header {
+    margin-top: 50px ;
+    padding: 0px;
+    height: 180px;
+  }
+
+body {
+    margin: 1px;
+    align-content: center;
+    padding: 10px;
+    background: linear-gradient(to right, hsla(0, 0%, 29%, 0.082), hsla(0, 0%, 45%, 0.082)), url(images/Fondo_1920.jpg);
+    background-repeat: no-repeat;
+  }
+
+button {
+    font-size: 20px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 120px;
+    margin: 10px;
+    height: 45px;
+    position: relative;
+    justify-content: right;
+    left: calc(50% - 75px);
+    background: linear-gradient(145deg, #e06e90c0 0%, #ad1ed8 100%);
+    box-shadow: 4px 4px 10px #f1f1f1;
+    border-radius: 15px;
+    border: none;
+  }
+
+button:active{
+    background-color: rgb(236, 236, 236);
+}
+
+button:focus{
+    outline: none;
+}
+  h1 {
+    color: rgb(28, 18, 83);
+    stroke: #2876a3;/*text-shadow: 1px 1px rgb(124, 124, 124);*/
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  } 
+
+  h2{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(253, 239, 251);
+  }
+  
+.text{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(235, 235, 235);
+}
+
+p{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    color: rgb(0, 0, 0)
+ }
+
+#anime-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.AnimeList{
+  color: rgb(238, 238, 238);
+  background: radial-gradient(rgba(100, 48, 107, 0.787), rgb(190, 206, 228)) ;
+  box-shadow: 2px 2px 2px 5px rgba(50, 9, 161, 0.459);
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  min-height: 20px;
+  display: wrap;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+.Container_Information{
+  margin-top: 0;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  float: left;
+}
