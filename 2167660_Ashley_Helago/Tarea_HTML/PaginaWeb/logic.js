@@ -1,17 +1,17 @@
 //Aviso emergente
-function fSubmited(event){
-    alert('Se ha registrado un nuevo visitante !!!')
+function fSubmited(event) {
+    alert('¡¡¡ Se ha registrado un nuevo visitante !!!')
 }
 
 //logic input
-function focusElement(event){
+function focusElement(event) {
     const element = event.srcElement;
-    element.classList.toggle('FocElemt',true);
+    element.classList.toggle('FocElemt', true);
 }
 
 //Blur "output"
-function blurElement(event){
+function blurElement(event) {
     const element = event.srcElement;
-    element.classList.toggle('FocElemt',false);
+    element.classList.toggle('FocElemt', false);
     event.srcElement.value = event.srcElement.value.toUpperCase()
 }
