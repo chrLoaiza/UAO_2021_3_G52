@@ -1,0 +1,66 @@
+body {
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #366097;
+  color:#ffffff;
+  height: 80px;
+  padding: 30px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  color: grey;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#card-list{
+  text-align: center;  
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#dog-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px 5px 0 0; 
+  width: 20%;
+  height: 20%; 
+}
+
+#dog-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#dog-photo {
+  width: 100%;
+}
+
+#request-btn { 
+  border: none;
+  outline: 0;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
