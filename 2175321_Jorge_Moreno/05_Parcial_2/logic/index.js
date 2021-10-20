@@ -6,10 +6,10 @@ request_btn.addEventListener("click", async () => {
   dataPromise.then((dataAPI) => {
     var userArr = [];
     userArr = dataAPI;
-    debugger
+    debugger;
 
     for (let index = 0; index < userArr.length; index++) {
-      debugger
+      debugger;
       const userData = userArr[index];
       const userEl = `      <div class="user-container">
       <div class="user-header">
@@ -17,7 +17,7 @@ request_btn.addEventListener("click", async () => {
       </div>
       <div class="user-body">
       <h3>${userData.name}</h3>
-      <p>${userData.description}</p>
+      <p >${userData.description}</p>
       <p class="foodType">Type: ${userData.type} food.</p>
       <p class="phone">Phone number :${userData.phone_number} </p>
         <div class="dias">
@@ -39,18 +39,14 @@ request_btn.addEventListener("click", async () => {
     </div>`;
       cardList.innerHTML += userEl;
 
-
-      debugger
+      debugger;
     }
-
-
-
-  })
-
+  });
 });
 async function getData() {
-  const response = await fetch('https://random-data-api.com/api/restaurant/random_restaurant?size=10');
+  const response = await fetch(
+    "https://random-data-api.com/api/restaurant/random_restaurant?size=10"
+  );
   const data = await response.json();
-  return data
+  return data;
 }
-

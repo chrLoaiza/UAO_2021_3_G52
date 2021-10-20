@@ -5,7 +5,7 @@ body {
 
 header {
   background-color: #366097;
-  color:#ffffff;
+  color: #ffffff;
   height: 80px;
   padding: 30px;
 }
@@ -14,41 +14,43 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 27px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h4 {
   color: grey;
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-#card-list{
-  text-align: center;  
-  display:flex;
+#card-list {
+  text-align: center;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-#dog-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.dog-card {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   transition: 0.3s;
-  border-radius: 5px 5px 0 0; 
-  width: 20%;
-  height: 20%; 
+  border-radius: 5px 5px 0 0;
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
-#dog-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.dog-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-#dog-photo {
-  width: 100%;
+.dog-photo {
+  aspect-ratio: 1/1;
+  object-fit: scale-down;
+  padding: 5px;
 }
 
-#request-btn { 
+#request-btn {
   border: none;
   outline: 0;
   padding: 15px;
@@ -61,6 +63,7 @@ h4 {
   font-size: 18px;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   opacity: 0.7;
 }
