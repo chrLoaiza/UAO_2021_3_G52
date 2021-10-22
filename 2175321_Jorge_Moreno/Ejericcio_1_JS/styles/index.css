@@ -152,9 +152,20 @@ footer {
   box-shadow: none;
 }
 
+.focus {
+  border-color:none;
+  background-color: #80ffdb;
+  box-shadow: -1px -1px 10px 4px rgba(4, 68, 204, 0.44);
+}
+.blur {
+  background-color: white;
+  box-shadow: none;
+}
+
 /**Dinamyc Classes*/
 .focus {
 background-color: rgb(101, 199, 199);
 color: rgb(185, 41, 185);
 font-weight: bold;
 }
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="./assets/index.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+    <header>
+      <h1 id="title">PokéParcial</h1>
+    </header>
+    <main>
+      <div class="search">
+        <button id="request-btn" type="submit"></button>
+        <p>or</p>
+        <div class="searcher">
+          <input id="pokeInput" type="text" placeholder="Look for a pokemon">
+          <div id="pokeSearch" class="icon">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <section id="card-list" class="cards">
+
+        <p id='noData'>¡Oh oh! You don't have any pokemon. ¡Let's look for them!</p>
+
+      </section>
+    </main>
+  </body>
+  <script src="./logic/index.js"></script>
+</html>

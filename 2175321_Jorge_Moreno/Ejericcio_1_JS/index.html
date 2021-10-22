@@ -74,7 +74,6 @@
     </main>
     <footer class="root-container">
       <h3>Mail us!</h3>
-      <form id="form" method="POST" class="footer-form">
       <form
         id="form"
         class="footer-form"
@@ -90,12 +89,15 @@
             name="nombre"
             type="text"
             onfocus="focusElement(event)"
-            onblur="blurElement(event)">
+            onblur="blurElement(event)"
+
+          />
+
         </label>
         <label for="email">
           <p>E-mail:</p>
           <input
-            id="inputEmail"
+            id="inputMail"
             name="mail"
             class="input"
             name="email"
