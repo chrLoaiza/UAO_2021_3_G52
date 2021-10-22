@@ -10,6 +10,9 @@ body {
 .user-container {
   display: flex;
   flex-direction: column;
+  border: 1px solid rgb(250, 93, 140);
+  padding: 10px;
+  background-color: burlywood;
   border: 1px solid rgb(93, 250, 161);
   padding: 10px;
   margin: 10px;
@@ -36,4 +39,22 @@ body {
 .user-body p, h3 {
   margin: 5px;
   word-wrap: break-word;
+}
+
+.card {
+  width: 500px;
+  background: linear-gradient(145deg, #bbc9ff 0%, #9ea9e6 100%);
+  box-shadow: 5px 5px 15px #8791c4, -5px -5px 15px #d7e7ff;
+  border-radius: 20px;
+  display: flex;
+  min-width: 0;
+  word-wrap: break-word;
+  padding: 3rem;
+
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-around;
 }

@@ -12,10 +12,11 @@ Compile JSX to regular React API calls
 
 ## Dev dependencies
 
-`npm i -D nodemon`
 Auto restart node when we change something in node is a node watcher
-`npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-react-hooks`
+`npm i -D nodemon`
+
 Help us to see mistakes while developing
+`npm i -D eslint babel-eslint eslint-plugin-react eslint-plugin-react-hooks`
 
 ### configure eslint
 
@@ -75,6 +76,8 @@ module.exports = {
   module: {
     rules: [
       {
+        //We are telling webpack to invoke babel-loader in each js file
+        //that is not in node_modules
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -101,10 +104,10 @@ add to **package.json**
 
 create two folder in root.
 
-* `mkdir src/server`
-* `mkdir src/components`
+- `mkdir src/server`
+- `mkdir src/components`
 
-create a **App.js** inside *components* directory and add this.
+create a **App.js** inside _src/components_ directory and add this.
 
 **App.js**
 
@@ -127,7 +130,7 @@ export default function App() {
 }
 ```
 
-create a **index.js** inside *src* directory and add this.
+create a **index.js** inside _src_ directory and add this.
 **index.js**
 
 ```js
@@ -140,7 +143,7 @@ import App from "./components/App";
 ReactDOM.hydrate(<App />, document.getElementById("mountNode"));
 ```
 
-Also inside *server* directory add **server.js**.
+Also inside _server_ directory add **server.js**.
 **server.js**
 
 ```js
@@ -165,7 +168,7 @@ server.get("/", (req, res) => {
         <script src="/main.js"></script>
       </body>
     </html>
-  `);
+  `)
 });
 
 server.listen(4242, () => console.log("Server is running..."));
